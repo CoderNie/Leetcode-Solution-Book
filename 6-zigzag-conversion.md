@@ -1,3 +1,15 @@
+# 6. ZigZag Conversion【medium】
+
+### 解题思路**：**
+
+### 实现代码：
+
+```
+
+```
+
+### 问题描述：
+
 The string`"PAYPALISHIRING"`is written in a zigzag pattern on a given number of rows like this: \(you may want to display this pattern in a fixed font for better legibility\)
 
 ```
@@ -24,8 +36,8 @@ Output: "PAHNAPLSIIGYIR"
 **Example 2:**
 
 ```
-Input: s = "PAYPALISHIRING", numRows = 4
-Output: "PINALSIGYAHRPI"
+Input: s = "PAYPALISHIRING", numRows = 4
+Output: "PINALSIGYAHRPI"
 
 Explanation:
 P     I    N
