@@ -1,2 +1,8 @@
-This file serves as an introduction to your Knowledge Base, it is displayed on the homepage of your website. Use it to provide more context to your visitors. eqwe 
+### **LeetCode 题解**
+
+笔者按照目录刷题，对于每一道题，力争使用效率最高（时间复杂度最低）的算法，并全部通过C++代码实现AC。
+
+大目录：
+
+[Problems 1 ~ 10](/first-question.md)
 
