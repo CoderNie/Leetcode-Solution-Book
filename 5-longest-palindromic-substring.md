@@ -21,7 +21,7 @@
 ### 实现代码：
 
 ```
-// 5. Longest Palindromic Substring
+// 5. Longest Palindromic Substring (动态规划)
 string longestPalindrome(string s) {
   int length = s.size();
   if (length == 0) return s;
