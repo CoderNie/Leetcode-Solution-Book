@@ -2,8 +2,6 @@
 
 ### 解题思路**：**
 
-
-
 ### 实现代码：
 
 ```
@@ -12,7 +10,7 @@
 
 ### 问题描述：
 
-Given an array`nums`of_n_integers, are there elements_a_,_b_,_c_in`nums`such that_a_+_b_+_c_= 0? Find all unique triplets in the array which gives the sum of zero.
+Given an array`nums`of_n\_integers, are there elements\_a_,_b_,_c\_in_`nums`_such that\_a_+_b_+_c_= 0? Find all unique triplets in the array which gives the sum of zero.
 
 **Note:**
 
