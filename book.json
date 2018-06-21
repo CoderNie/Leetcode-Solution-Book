@@ -21,7 +21,7 @@
             "url": "https://github.com/CoderNie/Leetcode-Solution-Book"
         },
         "github-buttons": {
-            "repo": "CoderNie/Leetcode-Solution-Book",
+            "repo": "https://github.com/CoderNie/Leetcode-Solution-Book",
             "types": [
                 "star",
                 "watch",
