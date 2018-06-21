@@ -1,3 +1,63 @@
 {
-    "plugins": [ "theme-default" ]
+    "plugins": [ 
+        "theme-default",
+        "disqus",
+        "-lunr", "-search", "search-plus",
+        "advanced-emoji",
+        "github",
+        "github-buttons",
+        "splitter",
+        "-sharing", "sharing-plus",
+        
+    ],
+    "pluginsConfig": {
+        "fontsettings": {
+            "theme": "sepia",
+            "family": "serif",
+            "size":  1
+        },
+        "disqus": {
+            "shortName": "gitbookuse"
+        },
+        "github": {
+            "url": "https://github.com/codernie"
+        },
+        "github-buttons": {
+            "repo": "CoderNie/Leetcode-Solution-Book",
+            "types": [
+                "star",
+                "watch",
+                "fork"
+            ],
+            "size": "small"
+        },
+        "sharing": {
+           "douban": false,
+           "facebook": false,
+           "google": true,
+           "hatenaBookmark": false,
+           "instapaper": false,
+           "line": false,
+           "linkedin": true,
+           "messenger": false,
+           "pocket": false,
+           "qq": true,
+           "qzone": true,
+           "stumbleupon": false,
+           "twitter": false,
+           "viber": false,
+           "vk": false,
+           "weibo": true,
+           "whatsapp": false,
+           "all": [
+               "google", "qq",
+               "weibo", "qzone", "linkedin"
+           ]
+       }
+    },
+    "links" : {
+        "sidebar" : {
+            "Home" : "http://blog.codernie.cn"
+        }
+    }
 }
