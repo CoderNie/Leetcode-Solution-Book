@@ -8,19 +8,17 @@
         "github-buttons",
         "splitter",
         "-sharing", "sharing-plus"
-        
     ],
     "pluginsConfig": {
         "fontsettings": {
-            "theme": "sepia",
             "family": "serif",
             "size":  1
         },
         "disqus": {
-            "shortName": "gitbookuse"
+            "shortName": "codernie_leetcode_solutions"
         },
         "github": {
-            "url": "https://github.com/codernie"
+            "url": "https://github.com/CoderNie/Leetcode-Solution-Book"
         },
         "github-buttons": {
             "repo": "CoderNie/Leetcode-Solution-Book",
@@ -34,11 +32,11 @@
         "sharing": {
            "douban": false,
            "facebook": false,
-           "google": true,
+           "google": false,
            "hatenaBookmark": false,
            "instapaper": false,
            "line": false,
-           "linkedin": true,
+           "linkedin": false,
            "messenger": false,
            "pocket": false,
            "qq": true,
@@ -50,8 +48,7 @@
            "weibo": true,
            "whatsapp": false,
            "all": [
-               "google", "qq",
-               "weibo", "qzone", "linkedin"
+               "qq", "weibo", "qzone", "twitter", "facebook"
            ]
        }
     },
