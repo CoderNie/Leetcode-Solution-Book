@@ -7,7 +7,7 @@
         "github",
         "github-buttons",
         "splitter",
-        "-sharing", "sharing-plus",
+        "-sharing", "sharing-plus"
         
     ],
     "pluginsConfig": {
