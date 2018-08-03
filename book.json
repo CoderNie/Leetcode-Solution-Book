@@ -1,7 +1,6 @@
 {
     "plugins": [ 
         "theme-default",
-        "disqus",
         "-lunr", "-search", "search-plus",
         "advanced-emoji",
         "github",
@@ -13,9 +12,6 @@
         "fontsettings": {
             "family": "serif",
             "size":  1
-        },
-        "disqus": {
-            "shortName": "codernie_leetcode_solutions"
         },
         "github": {
             "url": "https://github.com/CoderNie/Leetcode-Solution-Book"
