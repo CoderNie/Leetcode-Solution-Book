@@ -1,7 +1,7 @@
 {
     "plugins": [ 
         "theme-default",
-        //"disqus",
+        "disqus",
         "-lunr", "-search", "search-plus",
         "advanced-emoji",
         "github",
@@ -14,9 +14,9 @@
             "family": "serif",
             "size":  1
         },
-        //"disqus": {
-        //    "shortName": "codernie_leetcode_solutions"
-        //},
+        "disqus": {
+            "shortName": "codernie_leetcode_solutions"
+        },
         "github": {
             "url": "https://github.com/CoderNie/Leetcode-Solution-Book"
         },
