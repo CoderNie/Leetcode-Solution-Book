@@ -14,5 +14,7 @@
 
 [Problems 11 ~ 20](/problems-11-~-20.md)
 
+[Problems 21 ~ 30](/problems-21-~-30.md)
+
 ![](/assets/scan_code.png)
 
