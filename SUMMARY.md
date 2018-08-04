@@ -25,4 +25,5 @@
   * [20 Valid Parentheses](20-valid-parentheses.md)
 * [Problems 21 ~ 30](problems-21-~-30.md)
   * [21 Merge Two Sorted Lists](problems-21-~-30/21-merge-two-sorted-lists.md)
+  * [22 Generate Parentheses](problems-21-~-30/22-generate-parentheses.md)
 
