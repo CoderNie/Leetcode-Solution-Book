@@ -26,4 +26,7 @@
 * [Problems 21 ~ 30](problems-21-~-30.md)
   * [21 Merge Two Sorted Lists](problems-21-~-30/21-merge-two-sorted-lists.md)
   * [22 Generate Parentheses](problems-21-~-30/22-generate-parentheses.md)
+  * [23 Merge k Sorted Lists](problems-21-~-30/23-merge-k-sorted-lists.md)
+  * [24 Swap Nodes in Pairs](problems-21-~-30/24-swap-nodes-in-pairs.md)
+  * [25 Reverse Nodes in k-Group](problems-21-~-30/25-reverse-nodes-in-k-group.md)
 
