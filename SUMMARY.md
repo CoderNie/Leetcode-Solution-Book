@@ -29,6 +29,7 @@
   * [23 Merge k Sorted Lists](problems-21-~-30/23-merge-k-sorted-lists.md)
   * [24 Swap Nodes in Pairs](problems-21-~-30/24-swap-nodes-in-pairs.md)
   * [25 Reverse Nodes in k-Group](problems-21-~-30/25-reverse-nodes-in-k-group.md)
-  * [27 Remove Element](problems-21-~-30/27-remove-element.md)
   * [26 Remove Duplicates from Sorted Array](problems-21-~-30/26-remove-duplicates-from-sorted-array.md)
+  * [27 Remove Element](problems-21-~-30/27-remove-element.md)
+  * [28 Implement strStr\(\)](problems-21-~-30/28-implement-strstr.md)
 
