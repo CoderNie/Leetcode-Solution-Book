@@ -1,4 +1,4 @@
-# 24.Swap Nodes in Pairs
+# 24. Swap Nodes in Pairs
 
 # 解题思路**：**
 
@@ -25,7 +25,7 @@ ListNode* swapPairs(ListNode* head) {
 
 ### 问题描述：
 
-Given a linked list, swap every two adjacent nodes and return its head.
+Given a linked list, swap every two adjacent nodes and return its head.
 
 **Example:**
 

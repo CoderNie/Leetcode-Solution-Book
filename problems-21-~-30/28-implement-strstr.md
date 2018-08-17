@@ -1,27 +1,32 @@
-# 28. Remove Element
+# 28. Implement strStr\(\)
 
 # 解题思路**：**
 
-这道题和 26 题几乎没有区别，把判断条件稍微改变即可。
+字符串匹配算法，选择比较多，最容易的就是暴力匹配，高阶一点可以使用KMP，这里简单起见，采用暴力解法，嘻嘻。
 
 ### 实现代码：
 
 ```
-// 27. Remove Element
-int removeElement(vector<int>& nums, int val) {
-  int j = 0;
-  for (int i = 0; i < nums.size(); i++) {
-    if (nums[i] != val) {
-      nums[j++] = nums[i];
+// 28. Implement strStr()
+int strStr(string haystack, string needle) {
+  if (needle.size() == 0) return 0;
+  int hLen = haystack.size(), nLen = needle.size();
+  for (int i = 0; i < hLen; i++) {
+    if (hLen - i < nLen) {
+      return -1;
+    } else {
+      if (haystack.substr(i, nLen).compare(needle) == 0) {
+        return i;
+      }
     }
   }
-  return j;
+  return -1;
 }
 ```
 
 ### 问题描述：
 
-Implement[strStr\(\)](http://www.cplusplus.com/reference/cstring/strstr/).
+Implement strStr\(\).
 
 Return the index of the first occurrence of needle in haystack, or**-1**if needle is not part of haystack.
 
@@ -43,5 +48,5 @@ Output: -1
 
 What should we return when`needle`is an empty string? This is a great question to ask during an interview.
 
-For the purpose of this problem, we will return 0 when`needle`is an empty string. This is consistent to C's [strstr\(\)](http://www.cplusplus.com/reference/cstring/strstr/)and Java's [indexOf\(\)](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf%28java.lang.String%29).
+For the purpose of this problem, we will return 0 when`needle`is an empty string. This is consistent to C's strstr\(\) and Java's indexOf\(\).
 

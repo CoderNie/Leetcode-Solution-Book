@@ -32,4 +32,5 @@
   * [26 Remove Duplicates from Sorted Array](problems-21-~-30/26-remove-duplicates-from-sorted-array.md)
   * [27 Remove Element](problems-21-~-30/27-remove-element.md)
   * [28 Implement strStr\(\)](problems-21-~-30/28-implement-strstr.md)
+  * [29 Divide Two Integers](29-divide-two-integers.md)
 
