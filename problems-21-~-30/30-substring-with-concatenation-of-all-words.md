@@ -2,7 +2,7 @@
 
 # 解题思路**：**
 
-
+使用哈希表存储 words 数组中各个单词的数量，然后使用暴力匹配即可。
 
 ### 实现代码：
 
@@ -40,7 +40,6 @@ vector<int> findSubstring(string s, vector<string>& words) {
   }
   return result;
 }
-
 ```
 
 ### 问题描述：
