@@ -9,36 +9,36 @@
 ```
 // 30. Substring with Concatenation of All Words
 vector<int> findSubstring(string s, vector<string>& words) {
-  vector<int> result;
-  if (words.size() == 0 || words[0].size() == 0 || s.size() < words.size() * words[0].size()) {
-    return result;
-  }
-  unordered_map<string, int> counts;
-  for (string word : words) {
-    if (counts.find(word) == counts.end()) {
-      counts[word] = 1;
-    } else {
-      counts[word]++;
-    }
-  }
-  int wordCount = words.size(), wordLength = words[0].size(), strLength = s.size();
-  for (int i = 0; i <= strLength - wordLength * wordCount; i++) {
-    unordered_map<string, int> innerCounts = counts;
-    bool flag = true;
-    for (int j = 0; j < wordCount; j++) {
-      string nowStr = s.substr(i + j * wordLength, wordLength);
-      if (innerCounts.find(nowStr) == innerCounts.end() || innerCounts[nowStr] == 0) {
-        flag = false;
-        break;
-      } else {
-        innerCounts[nowStr]--;
-      }
-    }
-    if (flag) {
-      result.push_back(i);
-    }
-  }
+vector<int> result;
+if (words.size() == 0 || words[0].size() == 0 || s.size() < words.size() * words[0].size()) {
   return result;
+}
+unordered_map<string, int> counts;
+for (string word : words) {
+  if (counts.find(word) == counts.end()) {
+    counts[word] = 1;
+  } else {
+    counts[word]++;
+  }
+}
+int wordCount = words.size(), wordLength = words[0].size(), strLength = s.size();
+for (int i = 0; i <= strLength - wordLength * wordCount; i++) {
+  unordered_map<string, int> innerCounts = counts;
+  bool flag = true;
+  for (int j = 0; j < wordCount; j++) {
+    string nowStr = s.substr(i + j * wordLength, wordLength);
+    if (innerCounts.find(nowStr) == innerCounts.end() || innerCounts[nowStr] == 0) {
+      flag = false;
+      break;
+    } else {
+      innerCounts[nowStr]--;
+    }
+  }
+  if (flag) {
+    result.push_back(i);
+  }
+}
+return result;
 }
 ```
 
