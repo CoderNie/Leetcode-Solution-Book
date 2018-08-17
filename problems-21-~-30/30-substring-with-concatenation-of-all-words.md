@@ -1,50 +1,70 @@
-# 29. Devide Two Integers
+# 30. Substring with Concatenation of All Words
 
 # 解题思路**：**
 
-这道题如果用减法去实现会造成时间复杂度过高，从而导致时间溢出，所以这里采用位运算法，从 2 的 31 次方开始除，一直除到 2 的 0 次方，为了防止内存溢出，我们把结果和中间变量保存在 long 类型中的。
+
 
 ### 实现代码：
 
 ```
-// 29. Divide Two Integers
-int divide(int dividend, int divisor) {
-  if (dividend > INT32_MAX || dividend < INT32_MIN || divisor > INT32_MAX || divisor < INT32_MIN) return INT32_MAX;
-  long son = abs((long)divisor), father = abs((long)dividend), res = 0, base = 1, sum = 0;
-  for (int i = 31; i >= 0; i--) {
-    if (sum + (son << i) <= father) {
-      sum += son << i;
-      res += base << i;
+// 30. Substring with Concatenation of All Words
+vector<int> findSubstring(string s, vector<string>& words) {
+  vector<int> result;
+  if (words.size() == 0 || words[0].size() == 0 || s.size() < words.size() * words[0].size()) {
+    return result;
+  }
+  unordered_map<string, int> counts;
+  for (string word : words) {
+    if (counts.find(word) == counts.end()) {
+      counts[word] = 1;
+    } else {
+      counts[word]++;
     }
   }
-  if ((dividend >= 0 && divisor > 0) || (dividend < 0 && divisor < 0)) {
-    return (res > INT32_MAX) ? INT32_MAX : res;
-  } else {
-    return (-res < INT32_MIN) ? INT32_MAX : -res;
+  int wordCount = words.size(), wordLength = words[0].size(), strLength = s.size();
+  for (int i = 0; i <= strLength - wordLength * wordCount; i++) {
+    unordered_map<string, int> innerCounts = counts;
+    bool flag = true;
+    for (int j = 0; j < wordCount; j++) {
+      string nowStr = s.substr(i + j * wordLength, wordLength);
+      if (innerCounts.find(nowStr) == innerCounts.end() || innerCounts[nowStr] == 0) {
+        flag = false;
+        break;
+      } else {
+        innerCounts[nowStr]--;
+      }
+    }
+    if (flag) {
+      result.push_back(i);
+    }
   }
+  return result;
 }
+
 ```
 
 ### 问题描述：
 
-Given two integers`dividend`and`divisor`, divide two integers without using multiplication, division and mod operator.
-
-Return the quotient after dividing`dividend`by`divisor`.
-
-The integer division should truncate toward zero.
+You are given a string,**s**, and a list of words,**words**, that are all of the same length. Find all starting indices of substring\(s\) in**s**that is a concatenation of each word in**words**exactly once and without any intervening characters.
 
 **Example 1:**
 
 ```
-Input: dividend = 10, divisor = 3
-Output: 3
+Input:
+  s = "barfoothefoobarman",
+  words = ["foo","bar"]
+Output: [0,9]
+Explanation: Substrings starting at index 0 and 9 are "barfoor" and "foobar" respectively.
+The output order does not matter, returning [9,0] is fine too.
 ```
 
 **Example 2:**
 
 ```
-Input: dividend = 7, divisor = -3
-Output: -2
+Input:
+  s = "wordgoodstudentgoodword",
+  words = ["word","student"]
+Output: []
 ```
 
 
